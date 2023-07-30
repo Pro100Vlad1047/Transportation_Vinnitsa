@@ -1,0 +1,43 @@
+$active: #2ECC71;
+
+.language {
+    width: 80px;
+    height: 100%;
+    display: flex;
+    width: 80px;
+    height: 50%;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    .wrapper {
+        display: flex;
+        width: 100%;
+        gap: 5px;
+        justify-content: center;
+
+
+        img {
+            width: 40px;
+            transition: 0.1s all;
+            border-radius: 5px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:active {
+                transform: scale(0.95);
+            }
+        }
+    }
+
+    i {
+        position: absolute;
+        transform: rotate(180deg) scale(1.4);
+        color: $active;
+        left: 14px;
+        transition: 0.2s all;
+        bottom: -12px;
+    }
+}

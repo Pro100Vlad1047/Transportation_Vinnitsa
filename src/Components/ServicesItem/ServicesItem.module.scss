@@ -1,0 +1,45 @@
+$blue: #3498DB;
+
+.ServicesItem {
+    max-width: 420px;
+    height: 330px;
+    border: 3px solid $blue;
+    border-radius: 2px 10px 2px 10px;
+    padding: 10px 10px 15px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 22%;
+    justify-content: space-between;
+    background: white;
+    transition: 0.2s all;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0px 0px 10px $blue;
+        transform: scale(1.03);
+    }
+
+    .Image_block {
+        height: 250px;
+        width: 100%;
+        border-radius: 10px;
+        background-size: cover;
+        background-position:center;
+    }
+
+    h3 {
+        font-size: 20px;
+        font-weight: 700;
+        color: $blue;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a {
+        font-size: 13px;
+        text-decoration: underline;
+        color: black;
+    }
+}
