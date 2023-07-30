@@ -9,6 +9,8 @@ import MenuBtn from '../../Components/UI/MenuBtn/MenuBtn.jsx';
 import Language from '../UI/Language/Language';
 import { Link as ScrollTo} from 'react-scroll';
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -45,8 +47,8 @@ function Header() {
         </div>
           <div className={s.icons}>
               <Language/>
-              <a href="tel:+7-XXX-XXX-XXXX"><i className="fa-solid fa-phone"></i>+380730604298</a>
-              <a href="tel:+7-XXX-XXX-XXXX"><i className="fa-solid fa-phone"></i>+380633004298</a>
+              <a href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380730604298</a>
+              <a href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380633004298</a>
         </div>      
           <MenuBtn/>       
     </div>

@@ -140,9 +140,18 @@ $blue: #3498DB;
             height: 60%;
             cursor: pointer;
 
+            .fontAwesome_faPhone {
+                color: $blue;
+                transition:0.2s all;
+            }
+
             &:hover {
                 color: white;
                 background: $blue;
+
+                .fontAwesome_faPhone {
+                    color: white;
+                }
             }
         }
 
