@@ -2,6 +2,8 @@ import s from './About.module.scss';
 import Photo_1 from '../../assets/images/5.jpg';
 import Photo_2 from '../../assets/images/1.jpg';
 import Photo_3 from '../../assets/images/2.jpg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBox, faBoxesPacking, faBusinessTime } from '@fortawesome/free-solid-svg-icons';
 
 function About() {
 
@@ -32,7 +34,7 @@ function About() {
                       </div>
                       <div className={s.text_block}>
                           <div className={s.icon_block}>
-                              <i className="fa-solid fa-business-time"></i>
+                                <FontAwesomeIcon className={s.fontAwesome_faBox} icon={faBusinessTime} />
                           </div>
                           <p>
                               Ми працюємо швидко та якісно.
@@ -42,7 +44,7 @@ function About() {
                       </div>
                       <div className={s.text_block}>
                           <div className={s.icon_block}>
-                              <i className="fa-solid fa-boxes-packing"></i>
+                                <FontAwesomeIcon className={s.fontAwesome_faBox} icon={faBoxesPacking} />
                           </div>
                           <p>
                               Також, скориставшись послугами компанії “Вантажники Вінниця”,
@@ -53,8 +55,7 @@ function About() {
                       </div>
                       <div className={s.text_block}>
                           <div className={s.icon_block}>
-                              <i className="fa-solid fa-box"></i>
-
+                                <FontAwesomeIcon className={s.fontAwesome_faBox} icon={faBox} />
                           </div>
                           <p>
                               Ми працюємо у всіх районах Вінниці,

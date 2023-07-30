@@ -32,11 +32,11 @@ $active: #2ECC71;
         }
     }
 
-    i {
+    .fontAwesome_play {
         position: absolute;
-        transform: rotate(180deg) scale(1.4);
+        transform: rotate(270deg);
         color: $active;
-        left: 14px;
+        left: 13px;
         transition: 0.2s all;
         bottom: -12px;
     }

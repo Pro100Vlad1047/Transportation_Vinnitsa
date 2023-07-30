@@ -2,7 +2,6 @@ import s from './ServicesItem.module.scss';
 
 function ServicesItem({ Services_data }) {
 
-    console.log(Services_data)
 
     return (
         <div className={s.ServicesItem}>
