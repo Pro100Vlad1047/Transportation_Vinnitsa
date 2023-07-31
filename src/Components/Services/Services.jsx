@@ -27,6 +27,7 @@ function Services() {
 
                     })}
                 </div>
+                <button>Замовити послуги вантажників у Вінниці</button>
           </div>
       </div>
   );

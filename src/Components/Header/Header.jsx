@@ -1,8 +1,6 @@
 import s from './Header.module.scss';
 import {useState,useRef} from "react";
 //import Logo from '../../images/IMAGE.svg'
-import Loop from '../../assets/images/loop.svg'
-import Bash from '../../assets/images/bash.svg'
 //import Arrow from '../../images/arrow_down.svg';
 import { Link } from 'react-router-dom';
 import MenuBtn from '../../Components/UI/MenuBtn/MenuBtn.jsx';
@@ -38,7 +36,7 @@ function Header() {
               <ScrollTo className={s.ScrollTo_links} to="services" smooth={true} duration={500}>
                   <span>Послуги</span>
               </ScrollTo>
-              <ScrollTo className={s.ScrollTo_links} to="about" smooth={true} duration={500}>
+              <ScrollTo className={s.ScrollTo_links} to="tariffs" smooth={true} duration={500}>
                   <span>Тарифи</span>
               </ScrollTo>
               <ScrollTo className={s.ScrollTo_links} to="about" smooth={true} duration={500}>

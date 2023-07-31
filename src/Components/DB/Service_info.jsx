@@ -10,6 +10,8 @@ import Sklad_img from '../../assets/images/17.jpg';
 import Workers_img from '../../assets/images/5.jpg';
 import Lego_img from '../../assets/images/13.jpg';
 import Fortepiano_img from '../../assets/images/33.jpg';
+import Budynok_img from '../../assets/images/35.jpg';
+import Obladnannya_img from '../../assets/images/36.jpg';
 
 export const Service_info = [
 	{	
@@ -39,7 +41,7 @@ export const Service_info = [
 	},
 	{
 		id: 6,
-		name: 'Упаковка мебелі',
+		name: 'Пакування мебелі',
 		img: Furniture_img,
 	},
 	{
@@ -71,6 +73,16 @@ export const Service_info = [
 		id: 12,
 		name: 'Збирання та розбирання меблів',
 		img: Lego_img,
+	},
+	{
+		id: 13,
+		name: 'Демонтаж квартир та будинків',
+		img: Budynok_img,
+	},
+	{
+		id: 14,
+		name: 'Розвантаження обладнання',
+		img: Obladnannya_img,
 	},
 ];
 
