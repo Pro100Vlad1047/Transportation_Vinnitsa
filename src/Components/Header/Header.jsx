@@ -40,15 +40,15 @@ function Header() {
                   <span>Тарифи</span>
               </ScrollTo>
               <ScrollTo className={s.ScrollTo_links} to="advantages" smooth={true} duration={500}>
-                  <span>Переваги</span>
+                  <span className={s.resizing_header_link} >Переваги</span>
               </ScrollTo>
               <ScrollTo className={s.ScrollTo_links} to="footer" smooth={true} duration={500}>
                   <span>Контакти</span>
               </ScrollTo>
         </div>
           <div className={s.icons}>
-              <Language/>
-              <a href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380730604298</a>
+              {/*<Language />*/}
+              <a className={s.resizing_header_button} href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380730604298</a>
               <a href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380633004298</a>
         </div>      
           <MenuBtn/>       

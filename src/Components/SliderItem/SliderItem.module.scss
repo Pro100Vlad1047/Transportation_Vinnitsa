@@ -11,11 +11,17 @@ $blue: #3498DB;
     background-position: center;
     background-repeat: no-repeat;
 
+    @media (max-width: 768px) {
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+    }
+
     &:after {
         content: '';
         position: absolute;
         left: -100px;
-        width: 102%;
+        width: 104%;
         height: 104%;
         background: rgba(27, 38, 49,0.05);
     }
@@ -36,6 +42,20 @@ $blue: #3498DB;
         z-index: 1;
         margin: 50px 20px;
         z-index: 1;
+
+        @media(max-width: 1440px) {
+            width: 60%;
+        }
+
+        @media(max-width: 1024px) {
+            padding: 20px 10px;
+            gap: 20px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 10px 10px;
+            width: 80%;
+        }
 
         @media(max-width: 425px) {
             gap: 10px;
@@ -60,10 +80,14 @@ $blue: #3498DB;
         }
 
         p {
-            text-align: left;
+            text-align: center;
             font-size: 22px;
             line-height: 19px;
             color: white;
+
+            @media(max-width: 1024px) {
+                font-size: 18px;
+            }
 
             @media(max-width: 425px) {
                 font-size: 7px;

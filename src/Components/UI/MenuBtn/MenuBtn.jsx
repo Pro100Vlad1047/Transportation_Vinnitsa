@@ -3,6 +3,8 @@ import {useState,useRef} from "react";
 import Loop from '../../../assets/images/loop.svg'
 import Bash from '../../../assets/images/bash.svg'
 import { Link } from 'react-router-dom';
+import Language from '../../UI/Language/Language';
+import { Link as ScrollTo } from 'react-scroll';
 
 
 function MenuBtn() {
@@ -78,15 +80,15 @@ function MenuBtn() {
       menuMiniBtn_2.current.style.opacity='0';
       menuMiniBtn_2.current.style.width='0%';
       menuMiniBtn_3.current.style.top='43%';
-      menuMiniBtn_1.current.style.backgroundColor='black';
-      menuMiniBtn_2.current.style.backgroundColor='black';
-      menuMiniBtn_3.current.style.backgroundColor='black';
+      menuMiniBtn_1.current.style.backgroundColor='yellow';
+        menuMiniBtn_2.current.style.backgroundColor ='yellow';
+        menuMiniBtn_3.current.style.backgroundColor ='yellow';
     }else{
       menuMiniBtn_1.current.style.transform='rotate(0deg)';
       menuMiniBtn_3.current.style.transform='rotate(0deg)';
-      menuMiniBtn_1.current.style.backgroundColor='black';
-      menuMiniBtn_2.current.style.backgroundColor='black';
-      menuMiniBtn_3.current.style.backgroundColor='black';
+        menuMiniBtn_1.current.style.backgroundColor ='white';
+        menuMiniBtn_2.current.style.backgroundColor ='white';
+        menuMiniBtn_3.current.style.backgroundColor ='white';
     }
     clearTimeout(miniBtnFunc);
     setTimeout(miniBtnFunc,150);
@@ -103,14 +105,26 @@ function MenuBtn() {
           </div>
           <div onClick={menuToggle} style={menuTheme} className={s.wrapper}>
             <div className={s.plate}>
-              <div><a href="#">all products</a></div>
-              <div><a href="#">Solutions</a></div>
-              <div><a href="#">ABOUT</a></div>
-              <div><a href="#">Support</a></div>
-              <div className={s.icons_menu}>
-                <a href=""><img src={Loop} alt="loop"/></a>
-                <a href=""><img src={Bash} alt="bash"/></a>
-              </div>
+                  <div>
+                      <ScrollTo className={s.ScrollTo_links} to="about" smooth={true} duration={500}>
+                          <span onClick={menuToggle} href="#">Про нас</span>
+                      </ScrollTo>
+                  </div>
+                  <div>
+                      <ScrollTo className={s.ScrollTo_links} to="services" smooth={true} duration={500}>
+                          <span onClick={menuToggle} href="#">Послуги</span>
+                      </ScrollTo>
+                  </div>
+                  <div>
+                      <ScrollTo className={s.ScrollTo_links} to="tariffs" smooth={true} duration={500}>
+                          <span onClick={menuToggle} >Тарифи</span>
+                      </ScrollTo>
+                  </div>
+                  <div>
+                      <ScrollTo className={s.ScrollTo_links} to="footer" smooth={true} duration={500}>
+                          <span onClick={menuToggle} >Контакти</span>
+                      </ScrollTo>
+                  </div>
             </div>
           </div>  
         </div> 

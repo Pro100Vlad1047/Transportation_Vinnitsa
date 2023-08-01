@@ -12,12 +12,12 @@ $blue: #3498DB;
     }
 
     @media(max-width: 1024px) {
-        height: 400px;
+        height: 500px;
         padding: 20px 30px;
     }
 
     @media (max-width: 768px) {
-        height: 350px;
+        height: 450px;
     }
 
     @media (max-width: 425px) {
@@ -73,7 +73,7 @@ $blue: #3498DB;
         .inside_right_arrow {
             right: 13px;
             transform: translate(-50%,-50%) rotate(180deg);
-            z-index: 1;
+            z-index: 2;
 
             &:hover {
                 transform: translate(-50%,-50%) rotate(180deg) scale(1.1);
@@ -81,6 +81,10 @@ $blue: #3498DB;
 
             &:active {
                 transform: translate(-50%,-50%) rotate(180deg) scale(0.9);
+            }
+
+            @media(max-width: 768px) {
+                right: -5px;
             }
 
             @media(max-width: 425px) {
@@ -101,6 +105,11 @@ $blue: #3498DB;
             gap: 40px;
             align-items: center;
 
+            @media(max-width: 768px) {
+                width: 90%;
+                height: 6%;
+            }
+
             @media(max-width: 425px) {
                 gap: 10px;
                 width: 70%;
@@ -112,6 +121,12 @@ $blue: #3498DB;
                 cursor: pointer;
                 border-radius: 1px;
                 background-color: black;
+
+                @media(max-width: 768px) {
+                    width: 400px;
+                    height: 20%;
+                    border-radius: 3px;
+                }
 
                 @media(max-width: 425px) {
                     border-radius: 10px;

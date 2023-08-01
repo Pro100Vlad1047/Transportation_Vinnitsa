@@ -7,6 +7,10 @@
     padding-top: 70px;
     box-shadow: 0px 0px 20px #5DADE2;
 
+    @media(max-width: 1440px) {
+        padding-top: 80px;
+    }
+
     @media(max-width: 425px) {
         padding-top: 50px;
     }

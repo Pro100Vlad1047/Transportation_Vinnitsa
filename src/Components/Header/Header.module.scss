@@ -16,9 +16,17 @@ $blue: #3498DB;
     backdrop-filter: blur(5px);
     -webkit-user-select: none;
 
+    @media(max-width: 1440px) {
+        height: 80px;
+    }
+
     @media(max-width: 1024px) {
         padding: 0px 30px;
-        height: 60px;
+        height: 80px;
+    }
+
+    @media(max-width: 1024px) {
+        padding: 0px 15px;
     }
 
     @media(max-width: 425px) {
@@ -47,6 +55,13 @@ $blue: #3498DB;
             align-items: center;
             cursor: pointer;
 
+            @media(max-width: 1440px) {
+                width: 120px;
+                font-size: 18px;
+            }
+
+
+
             &:after {
                 content: ' ';
                 position: absolute;
@@ -68,10 +83,14 @@ $blue: #3498DB;
             }
         }
 
-        @media (max-width: 768px) {
+        .resizing_header_link {
+            @media(max-width: 1440px) {
+                display: none;
+            }
         }
 
-        @media(max-width: 630px) {
+        @media(max-width: 768px) {
+            display: none;
         }
     }
 
@@ -80,6 +99,14 @@ $blue: #3498DB;
         display: flex;
         align-items: center;
         position: relative;
+
+        @media(max-width: 1440px) {
+            max-width: 150px;
+        }
+
+        @media(max-width: 768px) {
+            max-width: 350px;
+        }
 
         &:after {
             content: ' ';
@@ -115,6 +142,15 @@ $blue: #3498DB;
             display: flex;
             justify-content: center;
             align-items: center;
+
+            @media(max-width: 1440px) {
+                padding: 0px 10px;
+                font-size: 25px;
+            }
+
+            @media(max-width: 768px) {
+                font-size: 25px;
+            }
         }
     }
 
@@ -124,6 +160,10 @@ $blue: #3498DB;
         column-gap: 21px;
         align-items: center;
         height: 100%;
+
+        @media(max-width: 1440px) {
+            column-gap: 12px;
+        }
 
         a {
             font-size: 18px;
@@ -140,9 +180,12 @@ $blue: #3498DB;
             height: 60%;
             cursor: pointer;
 
+            @media(max-width: 1440px) {
+            }
+
             .fontAwesome_faPhone {
                 color: $blue;
-                transition:0.2s all;
+                transition: 0.2s all;
             }
 
             &:hover {
@@ -153,10 +196,21 @@ $blue: #3498DB;
                     color: white;
                 }
             }
+
+            @media(max-width: 1024px) {
+                display: none;
+            }
         }
 
-        @media(max-width: 630px) {
-            visibility: hidden;
+        .resizing_header_button {
+
+            @media(max-width: 1200px) {
+                display: none;
+            }
+        }
+
+        @media(max-width: 768px) {
+            display:none;
         }
     }
 
@@ -236,7 +290,7 @@ $blue: #3498DB;
         font-weight: 500;
         -webkit-user-select: none;
 
-        @media(max-width: 630px) {
+        @media(max-width: 768px) {
             display: flex;
         }
     }

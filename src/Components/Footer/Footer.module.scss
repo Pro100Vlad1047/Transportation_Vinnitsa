@@ -22,12 +22,21 @@ $blue: #5DADE2;
         flex-direction: row;
         justify-content: center;
         gap: 150px;
-        padding-top:20px;
+        padding-top: 20px;
+
+        @media(max-width: 1024px) {
+            gap: 50px;
+        }
+
         .title {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: center;
+
+            @media(max-width: 1060px) {
+                max-width:250px;
+            }
 
             h1 {
                 font-size: 42px;
@@ -37,12 +46,20 @@ $blue: #5DADE2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
+                @media(max-width: 1024px) {
+                    font-size: 32px;
+                }
             }
 
             h3 {
                 font-size: 25px;
                 color: white;
                 font-weight: 500;
+
+                @media(max-width: 1024px) {
+                    font-size: 22px;
+                }
             }
         }
 
@@ -52,10 +69,18 @@ $blue: #5DADE2;
             justify-content: flex-start;
             gap: 20px;
 
+            @media(max-width: 1024px) {
+                gap: 20px;
+            }
+
             h2 {
                 font-size: 25px;
                 color: white;
                 font-weight: 500;
+
+                @media(max-width: 1024px) {
+                    font-size: 22px;
+                }
             }
 
             a {
@@ -72,6 +97,12 @@ $blue: #5DADE2;
                 transition: 0.1s all linear;
                 height: 50px;
                 cursor: pointer;
+
+                @media(max-width: 1024px) {
+                    font-size: 15px;
+                    padding: 2px 5px;
+                    height: 40px;
+                }
 
                 .fontAwesome_faPhone {
                     color: $blue;
@@ -95,18 +126,27 @@ $blue: #5DADE2;
             justify-content: flex-start;
             gap: 45px;
 
+            @media(max-width: 1024px) {
+                gap: 35px;
+            }
+
             h2 {
                 font-size: 25px;
                 color: white;
                 font-weight: 500;
+
+                @media(max-width: 1024px) {
+                    font-size: 22px;
+                }
             }
 
             a {
                 font-size: 20px;
                 color: white;
                 cursor: pointer;
-                &:hover{
-                    text-decoration:underline;
+
+                &:hover {
+                    text-decoration: underline;
                 }
             }
         }
