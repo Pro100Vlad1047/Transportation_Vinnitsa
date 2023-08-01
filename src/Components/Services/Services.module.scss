@@ -37,7 +37,7 @@ $blue: #3498DB;
             font-size: 20px;
             line-height: 25px;
             color: black;
-            font-weight:500;
+            font-weight: 500;
             text-align: center;
         }
 
@@ -77,17 +77,19 @@ $blue: #3498DB;
         button {
             width: 500px;
             height: 60px;
-            color: white;
-            background: none;
+            color: $blue;
+            background: yellow;
             font-size: 20px;
-            border: 2px solid #F1F51D;
+            border: 3px solid #F1F51D;
             border-radius: 30px;
             font-weight: 500;
             transition: 0.2s all;
-            margin-bottom:30px;
+            margin-bottom: 30px;
+
             &:hover {
-                background: #F1F51D;
-                color: $blue;
+                background: $blue;
+                color: white;
+                border: 3px solid #85C1E9;
             }
         }
     }

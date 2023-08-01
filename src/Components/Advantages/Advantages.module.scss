@@ -1,12 +1,13 @@
 $blue: #3498DB;
 
-.Tariffs {
+.Advantages {
     position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(52,152,219,1) 100%);
+    padding:0px 0px 10px 0px;
     .Header_href {
         position: absolute;
         top: -70px;

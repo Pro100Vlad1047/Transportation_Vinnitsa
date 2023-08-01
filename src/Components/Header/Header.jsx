@@ -23,7 +23,7 @@ function Header() {
 
 
   return (
-    <div className={s.Header}>
+    <header className={s.Header}>
           <div className={s.logo}>
               <ScrollTo onClick={BackToHome} className={s.ScrollTo_links} to="welcome" smooth={true} duration={500}>
                     <h1>Вантажники Вінниця</h1>
@@ -39,7 +39,10 @@ function Header() {
               <ScrollTo className={s.ScrollTo_links} to="tariffs" smooth={true} duration={500}>
                   <span>Тарифи</span>
               </ScrollTo>
-              <ScrollTo className={s.ScrollTo_links} to="about" smooth={true} duration={500}>
+              <ScrollTo className={s.ScrollTo_links} to="advantages" smooth={true} duration={500}>
+                  <span>Переваги</span>
+              </ScrollTo>
+              <ScrollTo className={s.ScrollTo_links} to="footer" smooth={true} duration={500}>
                   <span>Контакти</span>
               </ScrollTo>
         </div>
@@ -49,7 +52,7 @@ function Header() {
               <a href="tel:+7-XXX-XXX-XXXX"><FontAwesomeIcon className={s.fontAwesome_faPhone} icon={faPhone} />+380633004298</a>
         </div>      
           <MenuBtn/>       
-    </div>
+      </header>
   );
 }
 
