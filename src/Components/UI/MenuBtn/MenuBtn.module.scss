@@ -74,7 +74,7 @@ $blue: #3498DB;
 .button {
     position: absolute;
     z-index: 2;
-    left: 90%;
+    left: 88%;
     cursor: pointer;
     top: 20%;
     background-color: $blue;
@@ -89,6 +89,10 @@ $blue: #3498DB;
 
     @media(max-width: 768px) {
         display: flex;
+    }
+
+    @media(max-width: 600px) {
+        left: 85%;
     }
 }
 /* .back_button{

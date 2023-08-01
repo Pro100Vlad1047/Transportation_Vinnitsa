@@ -23,6 +23,13 @@ $blue: #3498DB;
             url('../../assets/images/2.jpg') no-repeat 100% 100%/0%;*/
     }
 
+    @media(max-width:768px) {
+        background: url('../../assets/images/20.jpg') no-repeat 0% 100%/100%,
+            url('../../assets/images/1.jpg') no-repeat 0% 0%/100%,
+            url('../../assets/images/2.jpg') no-repeat 0% 70%/100%,
+            url('../../assets/images/21.jpg') no-repeat 0% 40%/100%
+    }
+
     .Header_href {
         position: absolute;
         top: -70px;
@@ -56,8 +63,10 @@ $blue: #3498DB;
             }
 
             @media(max-width:768px) {
-                padding-right: 50px;
-                width: 90%;
+                padding: 20px;
+                padding-right: 20px;
+                width: 95%;
+                gap: 15px;
             }
 
             &:hover {
@@ -84,6 +93,11 @@ $blue: #3498DB;
                 font-weight: 700;
                 color: white;
                 text-align: left;
+
+                @media(max-width:768px) {
+                    font-size: 15px;
+                    font-weight: 400;
+                }
             }
 
             .buttons_block {
@@ -100,6 +114,12 @@ $blue: #3498DB;
                     border-radius: 30px;
                     font-weight: 500;
                     transition: 0.2s all;
+
+                    @media(max-width: 520px) {
+                        width: 160px;
+                        height: 40px;
+                        font-size: 15px;
+                    }
 
                     &:hover {
                         background: #F1F51D;
