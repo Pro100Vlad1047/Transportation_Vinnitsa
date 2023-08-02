@@ -24,7 +24,7 @@ function Services() {
 
                     })}
                 </div>
-                <button>Замовити послуги вантажників у Вінниці</button>
+                <button><a href="tel:+7-XXX-XXX-XXXX">Замовити послуги вантажників у Вінниці</a></button>
           </div>
       </div>
   );

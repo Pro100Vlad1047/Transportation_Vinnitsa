@@ -8,8 +8,7 @@ function TariffsItem({ Tariffs_data }) {
             
             <h3>{Tariffs_data.name}</h3>
             <p>{Tariffs_data.cost}</p>
-            <button>Дізнатися більше</button>
-
+            <button><a href="tel:+7-XXX-XXX-XXXX">Дізнатися більше</a></button>
         </div>
   );
 }

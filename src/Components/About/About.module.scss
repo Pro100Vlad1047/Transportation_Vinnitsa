@@ -13,7 +13,7 @@ $blue: #3498DB;
     }
 
     @media(max-width: 425px) {
-        height: 900px;
+        height: 800px;
     }
 
     @media(max-width: 340px) {
@@ -92,6 +92,7 @@ $blue: #3498DB;
 
                     @media(max-width: 425px) {
                         color: white;
+                        font-size: 15px;
                     }
 
                     @media(max-width: 340px) {
@@ -111,6 +112,7 @@ $blue: #3498DB;
 
                         @media(max-width: 425px) {
                             line-height: 25px;
+                            font-size: 15px;
                             color: white;
                         }
                     }
@@ -144,6 +146,7 @@ $blue: #3498DB;
 
                     @media(max-width: 425px) {
                         padding: 0px 0px 0px 10px;
+                        gap: 10px;
                     }
 
                     p {
@@ -161,6 +164,7 @@ $blue: #3498DB;
 
                         @media(max-width: 425px) {
                             color: white;
+                            font-size: 12px;
                         }
                     }
 

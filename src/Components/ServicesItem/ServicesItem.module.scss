@@ -24,6 +24,7 @@ $blue: #3498DB;
         min-height: 180px;
         flex-grow: 1;
         padding: 5px 5px 10px 5px;
+        border: 2px solid $blue;
     }
 
     @media(max-width: 340px) {
