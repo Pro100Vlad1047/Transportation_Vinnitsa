@@ -16,6 +16,10 @@ $blue: #3498DB;
         height: 900px;
     }
 
+    @media(max-width: 340px) {
+        height: 1100px;
+    }
+
     .Header_href {
         position: absolute;
         top: -70px;
@@ -69,6 +73,7 @@ $blue: #3498DB;
                     background: rgba(27, 38, 49,0.7);
                 }
 
+
                 h3 {
                     color: black;
                     line-height: 32px;
@@ -87,6 +92,11 @@ $blue: #3498DB;
 
                     @media(max-width: 425px) {
                         color: white;
+                    }
+
+                    @media(max-width: 340px) {
+                        font-size: 17px;
+                        line-height: 20px;
                     }
                 }
 

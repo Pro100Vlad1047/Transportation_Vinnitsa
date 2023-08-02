@@ -78,6 +78,8 @@ $blue: #3498DB;
                 gap: 50px;
             }
 
+
+
             &:hover {
                 box-shadow: 0px 0px 5px #D5D8DC;
             }
@@ -85,6 +87,10 @@ $blue: #3498DB;
             h2 {
                 font-size: 17px;
                 color: white;
+
+                @media(max-width: 340px) {
+                    font-size: 14px;
+                }
             }
 
             h1 {
@@ -99,6 +105,10 @@ $blue: #3498DB;
                 @media(max-width:425px) {
                     font-size: 42px;
                     text-align: center;
+                }
+
+                @media(max-width: 340px) {
+                    font-size: 30px;
                 }
             }
 
@@ -117,6 +127,10 @@ $blue: #3498DB;
                     line-height: 20px;
                     font-style: italic;
                     text-align: center;
+                }
+
+                @media(max-width: 340px) {
+                    font-size: 17px;
                 }
             }
 

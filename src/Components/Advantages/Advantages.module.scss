@@ -7,7 +7,8 @@ $blue: #3498DB;
     width: 100%;
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(52,152,219,1) 100%);
-    padding:0px 0px 10px 0px;
+    padding: 0px 0px 10px 0px;
+
     .Header_href {
         position: absolute;
         top: -70px;
@@ -29,6 +30,10 @@ $blue: #3498DB;
             padding: 10px;
             text-align: center;
             border-bottom: 2px solid #5DADE2;
+
+            @media(max-width: 340px) {
+                font-size: 32px;
+            }
         }
 
         span {

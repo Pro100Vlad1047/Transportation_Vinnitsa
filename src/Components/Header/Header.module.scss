@@ -34,6 +34,10 @@ $blue: #3498DB;
         height: 80px;
     }
 
+    @media(max-width: 340px) {
+        height: 60px;
+    }
+
     @media(max-height: 400px) {
         height: 40px;
     }
@@ -118,6 +122,8 @@ $blue: #3498DB;
             max-width: 350px;
         }
 
+
+
         @media(max-height: 400px) {
             max-width: 400px;
         }
@@ -169,6 +175,10 @@ $blue: #3498DB;
 
             @media(max-width: 425px) {
                 font-size: 23px;
+            }
+
+            @media(max-width: 340px) {
+                font-size: 20px;
             }
         }
     }

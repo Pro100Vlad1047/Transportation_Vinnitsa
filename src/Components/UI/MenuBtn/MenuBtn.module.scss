@@ -100,6 +100,13 @@ $blue: #3498DB;
         top: 17%;
     }
 
+    @media(max-width: 340px) {
+        width: 40px;
+        height: 40px;
+        top: 18%;
+        left: 82%;
+    }
+
     @media(max-height: 400px) {
         width: 30px;
         height: 30px;

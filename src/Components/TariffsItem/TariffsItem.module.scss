@@ -29,6 +29,10 @@ $blue: #3498DB;
         min-height: 400px;
     }
 
+    @media(max-width: 375px) {
+        min-height: 350px;
+    }
+
     &:after {
         content: '';
         position: absolute;
@@ -56,6 +60,11 @@ $blue: #3498DB;
         color: white;
         z-index: 1;
         text-transform: uppercase;
+
+        @media(max-width: 375px) {
+            font-size: 27px;
+            text-align: center;
+        }
     }
 
     p {
