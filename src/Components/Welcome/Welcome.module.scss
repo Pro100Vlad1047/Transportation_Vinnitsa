@@ -24,11 +24,9 @@ $blue: #3498DB;
     }
 
     @media(max-width:768px) {
-        background: url('../../assets/images/20.jpg') no-repeat 0% 100%/100%,
-            url('../../assets/images/1.jpg') no-repeat 0% 0%/100%,
-            url('../../assets/images/2.jpg') no-repeat 0% 70%/100%,
-            url('../../assets/images/21.jpg') no-repeat 0% 40%/100%
+        background: url('../../assets/images/20.jpg') no-repeat 0% 100%/100%, url('../../assets/images/1.jpg') no-repeat 0% 0%/100%, url('../../assets/images/2.jpg') no-repeat 0% 70%/100%, url('../../assets/images/21.jpg') no-repeat 0% 40%/100%
     }
+
 
     .Header_href {
         position: absolute;
@@ -44,6 +42,10 @@ $blue: #3498DB;
         justify-content: flex-end;
         align-items: center;
         border-bottom: 5px solid #5DADE2;
+
+        @media(max-width:425px) {
+            justify-content: center;
+        }
 
         .main {
             width: 70%;
@@ -69,6 +71,13 @@ $blue: #3498DB;
                 gap: 15px;
             }
 
+            @media(max-width:425px) {
+                width: 98%;
+                align-items: center;
+                border-radius: 20px 20px 20px 20px;
+                gap: 50px;
+            }
+
             &:hover {
                 box-shadow: 0px 0px 5px #D5D8DC;
             }
@@ -84,7 +93,12 @@ $blue: #3498DB;
                 color: white;
 
                 @media(max-width: 768px) {
-                    font-size: 35px;
+                    font-size: 42px;
+                }
+
+                @media(max-width:425px) {
+                    font-size: 42px;
+                    text-align: center;
                 }
             }
 
@@ -95,14 +109,27 @@ $blue: #3498DB;
                 text-align: left;
 
                 @media(max-width:768px) {
-                    font-size: 15px;
+                    font-size: 18px;
                     font-weight: 400;
+                }
+
+                @media(max-width:425px) {
+                    line-height: 20px;
+                    font-style: italic;
+                    text-align: center;
                 }
             }
 
             .buttons_block {
                 display: flex;
                 gap: 30px;
+
+                @media(max-width:425px) {
+                    flex-direction: column;
+                    gap: 15px;
+                    width: 100%;
+                    align-items: center;
+                }
 
                 button {
                     width: 200px;
@@ -121,9 +148,26 @@ $blue: #3498DB;
                         font-size: 15px;
                     }
 
+                    @media(max-width:425px) {
+                        width: 250px;
+                    }
+
                     &:hover {
                         background: #F1F51D;
                         color: $blue;
+                    }
+
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        color: white;
+
+                        &:hover {
+                            color: $blue;
+                        }
                     }
                 }
             }

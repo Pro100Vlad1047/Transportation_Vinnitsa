@@ -16,9 +16,10 @@ function Welcome() {
                       Команда наших професіоналів завжди готова допомогти.
                   </p>
                     <div className={s.buttons_block}>
-                        <ScrollTo className={s.ScrollTo_links} to="services" smooth={true} duration={500}>
+                        {/*<ScrollTo className={s.ScrollTo_links} to="services" smooth={true} duration={500}>
                             <button>Запитати ціну</button>
-                        </ScrollTo>
+                        </ScrollTo>*/}
+                        <button><a href="tel:+7-XXX-XXX-XXXX">Запитати ціну</a></button>
                         <ScrollTo className={s.ScrollTo_links} to="about" smooth={true} duration={500}>
                             <button>Дізнатися більше</button>
                         </ScrollTo>

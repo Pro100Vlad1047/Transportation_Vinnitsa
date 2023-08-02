@@ -12,6 +12,10 @@ $blue: #3498DB;
         height: 800px;
     }
 
+    @media(max-width: 425px) {
+        height: 900px;
+    }
+
     .Header_href {
         position: absolute;
         top: -70px;
@@ -41,6 +45,10 @@ $blue: #3498DB;
             width: 100%;
             background: #AED6F1;
 
+            @media(max-width: 425px) {
+                background: url('../../assets/images/9.jpg') 30% 0%/auto 100% no-repeat;
+            }
+
             .details_block {
                 width: 60%;
                 display: flex;
@@ -53,6 +61,12 @@ $blue: #3498DB;
                 @media(max-width: 1024px) {
                     width: 70%;
                     padding: 30px 15px;
+                }
+
+                @media(max-width: 425px) {
+                    width: 100%;
+                    padding: 30px 5px;
+                    background: rgba(27, 38, 49,0.7);
                 }
 
                 h3 {
@@ -70,6 +84,10 @@ $blue: #3498DB;
                         font-size: 20px;
                         line-height: 25px;
                     }
+
+                    @media(max-width: 425px) {
+                        color: white;
+                    }
                 }
 
                 .list {
@@ -79,6 +97,11 @@ $blue: #3498DB;
 
                         @media(max-width: 768px) {
                             font-size: 18px;
+                        }
+
+                        @media(max-width: 425px) {
+                            line-height: 25px;
+                            color: white;
                         }
                     }
 
@@ -95,6 +118,10 @@ $blue: #3498DB;
                                 font-size: 15px;
                                 line-height: 20px;
                             }
+
+                            @media(max-width: 425px) {
+                                color: white;
+                            }
                         }
                     }
                 }
@@ -104,6 +131,10 @@ $blue: #3498DB;
                     align-items: center;
                     justify-content: flex-start;
                     gap: 30px;
+
+                    @media(max-width: 425px) {
+                        padding: 0px 0px 0px 10px;
+                    }
 
                     p {
                         font-size: 20px;
@@ -117,6 +148,10 @@ $blue: #3498DB;
                             font-size: 15px;
                             line-height: 18px;
                         }
+
+                        @media(max-width: 425px) {
+                            color: white;
+                        }
                     }
 
                     .icon_block {
@@ -125,6 +160,8 @@ $blue: #3498DB;
                         align-items: center;
                         background: $blue;
                         border-radius: 50%;
+
+
 
                         .fontAwesome_faBox {
                             color: white;
@@ -153,6 +190,10 @@ $blue: #3498DB;
                 @media(max-width: 1024px) {
                     width: 15%;
                 }
+
+                @media(max-width: 425px) {
+                    display: none;
+                }
             }
 
             .photo_block_2 {
@@ -163,6 +204,10 @@ $blue: #3498DB;
 
                 @media(max-width: 1024px) {
                     width: 15%;
+                }
+
+                @media(max-width: 425px) {
+                    display: none;
                 }
             }
         }

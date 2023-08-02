@@ -22,7 +22,11 @@ $blue: #3498DB;
     flex-grow: 1;
 
     @media(max-width: 1024px) {
-        min-width:100%;
+        min-width: 100%;
+    }
+
+    @media(max-width: 425px) {
+        min-height: 400px;
     }
 
     &:after {

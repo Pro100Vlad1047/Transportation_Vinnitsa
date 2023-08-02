@@ -19,6 +19,13 @@ $blue: #3498DB;
         flex-grow: 1;
     }
 
+    @media(max-width: 425px) {
+        min-width: 140px;
+        min-height: 180px;
+        flex-grow: 1;
+        padding: 5px 5px 10px 5px;
+    }
+
     &:hover {
         box-shadow: 0px 0px 10px $blue;
         transform: scale(1.03);
@@ -30,12 +37,21 @@ $blue: #3498DB;
         border-radius: 10px;
         background-size: cover;
         background-position: center;
+
+        @media(max-width: 425px) {
+            height: 130px;
+        }
     }
 
     h3 {
         font-size: 20px;
         font-weight: 700;
         color: $blue;
+
+        @media(max-width: 425px) {
+            font-size: 15px;
+            text-align:center;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -47,5 +63,8 @@ $blue: #3498DB;
         text-decoration: underline;
         color: black;
 
+        @media(max-width: 425px) {
+            display:none;
+        }
     }
 }

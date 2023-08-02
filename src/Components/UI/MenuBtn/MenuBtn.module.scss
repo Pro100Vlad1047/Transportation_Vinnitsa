@@ -86,13 +86,18 @@ $blue: #3498DB;
     align-items: center;
     font-weight: 500;
     -webkit-user-select: none;
-
+        
     @media(max-width: 768px) {
         display: flex;
     }
 
     @media(max-width: 600px) {
         left: 85%;
+    }
+
+    @media(max-width: 425px) {
+        left: 84%;
+        top: 17%;
     }
 }
 /* .back_button{

@@ -21,7 +21,7 @@ $blue: #3498DB;
         content: '';
         position: absolute;
         left: -100px;
-        width: 104%;
+        width: 120%;
         height: 104%;
         background: rgba(27, 38, 49,0.05);
     }
@@ -58,7 +58,8 @@ $blue: #3498DB;
         }
 
         @media(max-width: 425px) {
-            gap: 10px;
+            gap: 20px;
+            padding: 20px 10px;
         }
 
         h3 {
@@ -74,8 +75,8 @@ $blue: #3498DB;
             }
 
             @media(max-width: 425px) {
-                font-size: 10px;
-                line-height: 10px;
+                font-size: 25px;
+                line-height: 40px;
             }
         }
 
@@ -90,8 +91,8 @@ $blue: #3498DB;
             }
 
             @media(max-width: 425px) {
-                font-size: 7px;
-                line-height: 7px;
+                font-size: 15px;
+                line-height: 25px;
             }
         }
     }
