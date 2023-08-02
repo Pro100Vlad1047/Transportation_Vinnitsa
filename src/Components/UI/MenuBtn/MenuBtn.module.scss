@@ -86,7 +86,7 @@ $blue: #3498DB;
     align-items: center;
     font-weight: 500;
     -webkit-user-select: none;
-        
+
     @media(max-width: 768px) {
         display: flex;
     }
@@ -98,6 +98,13 @@ $blue: #3498DB;
     @media(max-width: 425px) {
         left: 84%;
         top: 17%;
+    }
+
+    @media(max-height: 400px) {
+        width: 30px;
+        height: 30px;
+        top: 13%;
+        left: 86%;
     }
 }
 /* .back_button{

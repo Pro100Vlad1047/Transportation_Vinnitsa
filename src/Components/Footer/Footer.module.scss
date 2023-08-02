@@ -67,6 +67,11 @@ $blue: #5DADE2;
                     font-size: 32px;
                     width: 100%;
                 }
+
+                @media(max-width: 425px) {
+                    width: 100%;
+                    text-align:center;
+                }
             }
 
             h3 {
@@ -105,8 +110,6 @@ $blue: #5DADE2;
                 @media(max-width: 1024px) {
                     font-size: 22px;
                 }
-
-                
             }
 
             a {
@@ -164,8 +167,6 @@ $blue: #5DADE2;
                 @media(max-width: 1024px) {
                     font-size: 22px;
                 }
-
-                
             }
 
             a {
@@ -173,7 +174,7 @@ $blue: #5DADE2;
                 color: white;
                 cursor: pointer;
 
-                
+
 
                 &:hover {
                     text-decoration: underline;

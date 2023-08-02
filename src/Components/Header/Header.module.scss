@@ -34,6 +34,10 @@ $blue: #3498DB;
         height: 80px;
     }
 
+    @media(max-height: 400px) {
+        height: 40px;
+    }
+
     .links {
         text-transform: uppercase;
         text-decoration: none;
@@ -64,6 +68,9 @@ $blue: #3498DB;
                 width: 150px;
             }
 
+            @media(max-height: 400px) {
+                width: 120px;
+            }
 
             &:after {
                 content: ' ';
@@ -111,6 +118,9 @@ $blue: #3498DB;
             max-width: 350px;
         }
 
+        @media(max-height: 400px) {
+            max-width: 400px;
+        }
 
 
         &:after {
